@@ -1,0 +1,23 @@
+* {
+    padding: 5px;
+    margin: 0;
+}
+
+table, th, td {
+    border: 1px solid gray;
+}
+#personalInformation-input {
+    margin: 5px;
+}
+
+#medicalHistory-input {
+    margin: 5px;
+}
+
+#takingMed {
+    display: flex;
+}
+
+/* ::placeholder{
+    color: red;
+} */

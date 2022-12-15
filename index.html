@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Front-End Developer</title>
+
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<form name="submit-form" action="#" onsubmit="submited(); return false">
+    <div class="personalInformation">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <table>
+                <tr>
+                    <th>First Name</th>
+                    <td><input id="input-name" type="text" name="firstname" placeholder="firstname">
+                    <th>Gender</th>
+                    <td>
+                        <input id="gender" type="radio" name="female" value="female" onclick="genderFunc(this.value)">Female
+                        <input id="gender" type="radio" name="male" value="male" onclick="genderFunc(this.value)">Male
+                    </td>
+                </tr>
+    
+                <tr>
+                    <th>Last Name</th>
+                    <td><input id="input-lastName" type="text" name="lastname" placeholder="lastname"></td>
+                    <th>Nationality</th>
+                    <td>
+                        <select id="nationals" name="nationals">
+                            <option value="thailand">Thailand</option>
+                            <option value="japan">Japan</option>
+                            <option value="indonesia">Indonesia</option>
+                            <option value="chaina">Chaina</option>
+                        </select>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <th>Address</th>
+                    <td colspan="3"><textarea name="address" id="" cols="30" rows="10"></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+        
+    </div>
+    <div class="medicalHistory">
+        <fieldset>
+            <legend>Medical History</legend>
+            <input type="checkbox" id="medicalHistory-input" name="smallpox" value="smallpox" onclick="medicalHistory(this.value)">Smallpox
+            <input type="checkbox" id="medicalHistory-input" name="mumps" value="mumps" onclick="medicalHistory(this.value)">Mumps
+            <input type="checkbox" id="medicalHistory-input" name="dizziness" value="dizziness" onclick="medicalHistory(this.value)">Dizziness
+            <input type="checkbox" id="medicalHistory-input" name="sneezing" value="sneezing" onclick="medicalHistory(this.value)">Sneezing
+        </fieldset>
+    </div>
+    <div class="currentMedication">
+        <fieldset>
+            <legend>Current Medication</legend>
+            <div id="takingMed">
+                <p>Are you currently taking any medication?</p>
+                <input type="radio" id="" name="yes" value="yes" onclick="currentMedical(this.value)"> <p>Yes</p>
+                <input type="radio" id="" name="no" value="no" onclick="currentMedical(this.value)"> <p>No</p>
+            </div>
+            <div>
+                <p>If you are currently taking medication, plaese indicate it in the space below</p>
+                <textarea name="currentMedicationArea" id="id-currentMedicationArea" cols="30" rows="10"></textarea>
+            </div>
+        </fieldset>
+    </div>
+    <div class="button">
+        <input type="submit" name="submit" value="Submit"></input>
+        <input type="reset" name="reset" value="Reset"></input>
+    </div>
+</form>  
+    <script src="./main.js"></script>
+</body>
+</html>
